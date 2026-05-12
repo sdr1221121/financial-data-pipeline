@@ -39,7 +39,9 @@ if __name__ == "__main__":
     
     df=transform(df)
     
-    print(df.head)
+    print(df.head())
+    print(df.columns)
+
     
     print("Transform concluido com sucesso")
     
