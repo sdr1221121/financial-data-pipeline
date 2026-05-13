@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Pipeline",
+            "type": "python",
+            "request": "launch",
+            "module": "src.pipiline.main",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug DuckDB Loader",
+            "type": "python",
+            "request": "launch",
+            "module": "src.load.duckdb_loader",
+            "console": "integratedTerminal"
+        }
+    ]
+}
