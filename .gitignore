@@ -1,3 +1,9 @@
 cv.text
 finance.db
 *.pyc
+.env
+__pycache__/
+"@ > .gitignore
+seed_db.py
+predict.png
+*.parquet
