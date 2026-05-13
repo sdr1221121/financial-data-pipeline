@@ -16,17 +16,19 @@ filtered_df = df[df["symbol"]==selected_asset]
 
 latest=filtered_df.iloc[-1]
 
-col1, col2 =st.columns(2)
+col1, col2, col3 =st.columns(3)
 
 # METRIC1 current price
 with col1:
-    st.metric(" Current Price", latest["Close"])
+    st.metric("Current Price", round(latest["Close"],2))
 
 # METRIC2 daily return
 with col2:
-    st.metric("Daily Return", latest["daily_return"])
+    st.metric("Daily Return", round(latest["daily_return"]*100,2))
     
 #METRIC3 volatility
+with col3:
+    st.metric("Volatility", round(latest["daily_return"].std(),4))
 
     
 #GRAPHIC
